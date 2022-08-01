@@ -2,14 +2,14 @@
 
 The project includes
 
-React,
-TypeScript,
-Jest; for the testing,
-Redux; for the state management,
-Sass; for the styling,
-Firebase/Firestore; as the database,
+React,\
+TypeScript,\
+Jest; for the testing,\
+Redux; for the state management,\
+Sass; for the styling,\
+Firebase/Firestore; as the database,\
 Formik; for the form handling,
-
+\
 according to assesment demand list.
 
 After getting the repo please check the dependencies for the proper installation.
