@@ -1,6 +1,6 @@
 ## Brief Information
 
-The project includes
+The project includes;
 
 React,\
 TypeScript,\
@@ -8,7 +8,7 @@ Jest; for the testing,\
 Redux; for the state management,\
 Sass; for the styling,\
 Firebase/Firestore; as the database,\
-Formik; for the form handling,
+Formik; for the form handling,\
 \
 according to assesment demand list.
 
