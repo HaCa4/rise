@@ -1,0 +1,72 @@
+/* COLORS */
+$urgent: #f44336;
+$regular: rgb(231, 149, 25);
+$trivial: #3ea6ff;
+
+@mixin buttonStyle($color, $width) {
+  width: $width;
+  height: 2rem;
+  line-height: 2rem;
+  margin-left: 1rem;
+  background-color: $color;
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+@mixin modalButton($color, $bg-color) {
+  width: 7rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: $color;
+  background-color: $bg-color;
+  &:active {
+    transform: scale(0.95);
+  }
+}
+@mixin inputStyle {
+  height: 2rem;
+  border: 1px solid rgb(128, 128, 128, 0.5);
+  padding: 0.2rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin formStyle {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+@mixin iconStyle($color) {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  margin-right: 2px;
+  color: $color;
+  background-color: rgb(220, 220, 220);
+  cursor: pointer;
+  margin-top: 0.2rem;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+@mixin modalButtonBox($width) {
+  width: $width;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

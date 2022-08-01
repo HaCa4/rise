@@ -1,0 +1,45 @@
+@import "../../../sass-variables/main-args.scss";
+.sorted-list {
+  width: 100%;
+  border: 2px solid rgb(162, 200, 218);
+  max-height: 50vh;
+  overflow-y: auto;
+  margin-top: 0.2rem;
+  border-radius: 0.2rem;
+}
+table {
+  width: 100%;
+  min-width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  text-align: left;
+  word-break: break-all;
+}
+tbody {
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(9, 84, 119, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.1rem;
+  background: rgb(9, 84, 119, 0.5);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(9, 84, 119);
+}
+.thead {
+  position: sticky;
+  top: 0;
+  min-width: 100%;
+  background-color: rgb(162, 200, 218);
+  height: 2rem;
+}
+
+th {
+  padding-left: 0.3rem;
+}

@@ -1,0 +1,38 @@
+@import "../../sass-variables/main-args.scss";
+.warn-icon {
+  width: 3rem;
+  height: 3rem;
+  color: red;
+}
+.warn-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.warn-c {
+  @include modalButton(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.2));
+}
+.warn-a {
+  @include modalButton(white, red);
+}
+.warn-b-box {
+  @include modalButtonBox(60%);
+}
+@media screen and (max-width: 790px) {
+  .warn-text {
+    font-size: 1rem;
+    font-weight: 500;
+    word-wrap: break-word;
+    width: 70%;
+    line-height: 1rem;
+    text-align: center;
+  }
+  .warn-c {
+    width: 4rem;
+    font-size: 0.7rem;
+  }
+  .warn-a {
+    width: 4rem;
+    font-size: 0.7rem;
+  }
+}

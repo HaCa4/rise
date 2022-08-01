@@ -1,0 +1,54 @@
+@import "../../../sass-variables/main-args.scss";
+
+.form-line {
+  @include formStyle();
+  justify-content: space-between;
+  background-color: rgb(162, 200, 218);
+  border-radius: 0.3rem;
+}
+.search-name {
+  @include inputStyle();
+  flex-grow: 1;
+  margin: 0.5rem;
+  height: 1.5rem;
+  padding-left: 1.8rem;
+  font-size: 0.8rem;
+}
+.s-icon {
+  color: gray;
+  font-size: 1.5rem;
+}
+.search-priority {
+  @include inputStyle();
+  height: 2rem;
+  width: 10rem;
+  margin: 0.5rem;
+  font-size: 0.8rem;
+  padding-left: 0.9em;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .form-line {
+    margin-top: -1rem;
+  }
+  .search-priority {
+    width: 7rem;
+  }
+}
+@media screen and (max-width: 366px) {
+  .form-line {
+    flex-direction: column;
+  }
+  .search-name {
+    width: 80%;
+    padding-left: 0.5rem;
+  }
+  .search-priority {
+    width: 50%;
+  }
+  .s-icon {
+    position: fixed;
+    right: 1.5rem;
+    margin-top: 0.2rem;
+  }
+}

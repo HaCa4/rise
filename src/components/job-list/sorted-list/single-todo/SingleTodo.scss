@@ -1,0 +1,79 @@
+@import "../../../../sass-variables/main-args.scss";
+
+.priority-urgent {
+  @include buttonStyle($urgent, 4rem);
+  margin: 0;
+  font-size: 0.7rem;
+  text-align: center;
+  cursor: default;
+}
+.priority-regular {
+  @include buttonStyle($regular, 4rem);
+  margin: 0;
+  font-size: 0.7rem;
+  text-align: center;
+  cursor: default;
+}
+.priority-trivial {
+  @include buttonStyle($trivial, 4rem);
+  margin: 0;
+  font-size: 0.7rem;
+  text-align: center;
+  cursor: default;
+}
+.icon-delete {
+  @include iconStyle($urgent);
+}
+.icon-edit {
+  @include iconStyle($trivial);
+}
+.tb-r {
+  height: 3rem;
+}
+.td-name {
+  width: 75%;
+  padding-left: 0.5rem;
+  text-align: left;
+  word-break: break-all;
+}
+@media screen and (max-width: 700px) {
+  .td-name {
+    width: 70%;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 482px) {
+  .td-name {
+    width: 60%;
+    font-size: 0.6rem;
+  }
+  .icon-delete {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .icon-edit {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .priority-urgent {
+    font-size: 0.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 3.5rem;
+    margin-left: 0.3rem;
+  }
+  .priority-regular {
+    font-size: 0.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 3.5rem;
+    margin-left: 0.3rem;
+  }
+  .priority-trivial {
+    font-size: 0.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 3.5rem;
+    margin-left: 0.3rem;
+  }
+}

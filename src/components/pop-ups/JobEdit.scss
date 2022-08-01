@@ -1,0 +1,45 @@
+@import "../../sass-variables/main-args.scss";
+
+.edit-c {
+  @include modalButton(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.2));
+}
+.edit-s {
+  @include modalButton(white, red);
+}
+.edit-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -2rem;
+}
+.edit-line {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -1rem;
+}
+.edit-name {
+  @include inputStyle();
+  color: gray;
+  cursor: default;
+}
+.edit-priority {
+  @include inputStyle();
+  height: 2.6rem;
+}
+.form-b-box {
+  @include modalButtonBox(80%);
+}
+@media screen and (max-width: 790px) {
+  .edit-s {
+    width: 4rem;
+    font-size: 0.7rem;
+  }
+  .edit-c {
+    width: 4rem;
+    font-size: 0.7rem;
+  }
+}
