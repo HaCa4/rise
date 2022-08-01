@@ -10,7 +10,7 @@ Sass; for the styling,\
 Firebase/Firestore; as the database,\
 Formik; for the form handling,\
 \
-according to assesment demand list.
+according to requirements of the assesment.
 
 After getting the repo please check the dependencies for the proper installation.
 
